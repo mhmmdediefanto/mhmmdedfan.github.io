@@ -1,0 +1,158 @@
+@media screen and (max-width: 768px) {
+    header {
+        display: grid;
+        grid-template-areas: 'title-header title-header img-header img-header img-header img-header ' 'content-card content-card content-card content-card content-card content-card';
+        height: 80vh;
+        box-shadow: 0 4px 2px -2px rgb(189, 189, 187);
+        background-image: url('../img/bg/bgedi.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: white;
+        /* background: linear-gradient(to right, red, yellow); */
+    }
+    header .title-header {
+        width: 70%;
+        height: 400px;
+        margin-left: 40px;
+    }
+    header .img-header {
+        height: 400px;
+        width: 100%;
+        grid-area: img-header;
+        position: relative;
+    }
+    header .img-header img {
+        width: 100%;
+        margin-left: 10px;
+    }
+    header .title-header h3 {
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+        font-family: 'Patua One', cursive;
+    }
+    header .title-header h1 {
+        font-size: 1.3em;
+        font-family: 'Patua One', cursive;
+        color: yellow;
+        margin-bottom: 20px;
+    }
+    header .title-header .btn-start {
+        width: 250px;
+    }
+    header .title-header .btn-start .portfolio {
+        width: 120px;
+        height: 35px;
+    }
+    header .title-header .btn-start a {
+        font-size: 0.9em;
+    }
+    header .title-header .btn-start .portfolio span {
+        font-size: 1em;
+    }
+    header .title-header .btn-start .cv {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+        width: 120px;
+        height: 35px;
+    }
+    header .title-header .btn-start .cv span {
+        font-size: 1em;
+    }
+    header .content-card .container-content-card .content-card-desaigner {
+        width: 40%;
+        height: 35px;
+        font-size: 0.7em;
+        padding: 2px;
+    }
+    header .content-card .container-content-card .content-card-developer {
+        font-size: 0.7em;
+        padding: 2px;
+        height: 35px;
+        width: 40%;
+    }
+    main .project {
+        grid-template-columns: 45% 45%;
+        padding-left: 30px;
+    }
+    main .project .project-img img {
+        width: 300px;
+    }
+    main .project .project-img .project-article h4 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+    main .project .card-project {
+        grid-template-columns: 180px 180px;
+        row-gap: 10px;
+        box-sizing: border-box;
+        padding: 50px 15px 50px 15px;
+    }
+    main .card-project .card {
+        width: 170px;
+        height: 230px;
+    }
+    main .cont-skills .skills {
+        row-gap: 15px;
+    }
+    main .cont-skills .skills .container-skills {
+        grid-template-rows: 100px 60px 60px 60px 60px;
+        padding: 20px;
+    }
+    main .cont-skills .skills .container-skills .myskills {
+        padding-left: 30px;
+        background-color: white;
+        padding-right: 25px;
+        padding-top: 5px;
+        display: grid;
+        height: 45px;
+        width: 320px;
+        grid-template-columns: 30px 15px 7fr;
+        grid-template-rows: 20px 20px 20px;
+    }
+    main .cont-skills .skills .container-skills .myskills .article-skills p {
+        font-size: 0.9em;
+    }
+    main .cont-skills .skills .container-skills .myskills .article-skills {
+        padding-top: 2px;
+        padding-left: 3px;
+        grid-area: article-skills;
+        font-size: 15px;
+    }
+    main .cont-skills .skills .myskills .skills-range p {
+        color: purple;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 22px;
+    }
+    main .cont-skills .skills .img-skills img {
+        width: 300px;
+    }
+    main .cont-contact .wrapper-contact {
+        grid-template-columns: 40% 65%;
+    }
+    main .cont-contact .wrapper-contact .img-contact img {
+        width: 300px;
+    }
+    main .cont-contact .wrapper-contact .form-contact h4 {
+        font-size: 1.2em;
+    }
+    footer .cont-footer {
+        grid-template-columns: 45% 25% 25%;
+    }
+    footer .cont-footer .title-footer .icons-title p {
+        font-size: 14px;
+    }
+    footer .cont-footer .information-footer .list-information {
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    footer .cont-footer .contact-us .cont-contact {
+        padding-left: 5px;
+        font-size: 15px;
+    }
+    footer .copy-right {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,259 @@
+@media screen and (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 7.4vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+        background-color: purple;
+        height: 95vh;
+        width: 75%;
+        transform: translateX(100%);
+        transition: ease-in-out 0.8s;
+        opacity: 0;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    /* header */
+    header {
+        display: grid;
+        grid-template-areas: 'img-header img-header img-header img-header img-header img-header' 'title-header title-header title-header title-header  title-header title-header' 'content-card content-card content-card content-card content-card content-card';
+        height: 120vh;
+        box-shadow: 0 4px 2px -2px rgb(189, 189, 187);
+        background-image: url('../img/bg/bgedi.png');
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: white;
+        /* background: linear-gradient(to right, red, yellow); */
+    }
+    header .img-header img {
+        margin-left: 0;
+        width: 35%;
+    }
+    header .img-header {
+        height: auto;
+        width: 100%;
+        grid-area: img-header;
+        position: relative;
+    }
+    header .title-header {
+        padding-top: 0px;
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin-left: 0;
+        text-align: center;
+    }
+    header .title-header h3 {
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+        font-family: 'Patua One', cursive;
+    }
+    header .title-header h1 {
+        font-size: 1.3em;
+        font-family: 'Patua One', cursive;
+        color: yellow;
+        margin-bottom: 10px;
+    }
+    header .title-header .btn-start {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    header .title-header .btn-start .portfolio {
+        width: 125px;
+        height: 40px;
+        margin-right: 30px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    }
+    header .title-header .btn-start .portfolio span {
+        font-size: 1.3em;
+    }
+    header .title-header .btn-start .cv {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+        width: 125px;
+        height: 40px;
+    }
+    header .title-header .btn-start .cv span {
+        font-size: 1.3em;
+    }
+    header .content-card {
+        position: relative;
+        top: -90%;
+    }
+    header .content-card .container-content-card {
+        width: 50%;
+        height: 190px;
+        font-size: 0.7em;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+    header .content-card .container-content-card .content-card-desaigner {
+        width: 130px;
+        height: 40px;
+        font-size: 1em;
+        padding: 5px;
+        color: white;
+        background-color: purple;
+    }
+    header .content-card .container-content-card .content-card-developer {
+        width: 130px;
+        height: 40px;
+        font-size: 1em;
+        padding: 5px;
+        color: white;
+        background-color: purple;
+    }
+    /* project */
+    main .project {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+        background-color: white;
+        margin-bottom: 40px;
+    }
+    main .project .project-img {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .project .card-project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 65px 50px 50px 50px;
+        grid-area: card-project;
+    }
+    main .card-project .card {
+        cursor: pointer;
+        width: 300px;
+        height: 350px;
+    }
+    main .cont-skills .skills .container-skills {
+        grid-template-rows: 80px 80px 80px 80px 80px;
+        padding: 20px;
+    }
+    main .cont-skills .skills {
+        row-gap: 15px;
+        padding-bottom: 30px;
+    }
+    main .cont-skills .skills .container-skills .myskills {
+        display: grid;
+        height: 60px;
+        width: 400px;
+        grid-template-areas: 'icons-skills icons-skills article-skills  article-skills article-skills article-skills' 'icons-skills icons-skills skills-range skills-range skills-range skills-range';
+        grid-template-columns: 30px 15px 7fr;
+        grid-template-rows: 20px 20px 20px;
+        text-transform: capitalize;
+        box-shadow: 3px 3px 8px rgb(0 0 0 / 0.3);
+    }
+    main .cont-skills .skills .container-skills .myskills .article-skills {
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+    /* skills */
+    main .cont-skills {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    main .cont-skills .skills {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-top: 30px;
+    }
+    main .cont-skills .skills .myskills .skills-range input {
+        margin-top: 10px;
+    }
+    main .contact-title h4 {
+        margin-top: 35px;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 700;
+        color: purple;
+        font-family: 'Patua One', cursive;
+        margin-bottom: 35px;
+    }
+    main .cont-contact {
+        width: 100%;
+        height: auto;
+    }
+    main .cont-contact .wrapper-contact {
+        display: flex;
+        flex-direction: column;
+    }
+    main .cont-contact .wrapper-contact .img-contact {
+        height: auto;
+        margin-bottom: 70px;
+    }
+    main .cont-contact .wrapper-contact .form-contact .form-input {
+        width: 90%;
+        height: 500px;
+        padding: 15px;
+    }
+    main .cont-contact .wrapper-contact .form-contact h4 {
+        font-size: 1.2em;
+        color: yellow;
+    }
+    /* footer */
+    footer {
+        height: auto;
+        padding: 15px 25px 15px 25px;
+    }
+    footer .cont-footer {
+        width: 100%;
+        height: auto;
+        display: grid;
+    ;
+        grid-template-columns: 50% 50%;
+    }
+    footer .cont-footer .information-footer .list-information {
+        margin-left: 45px;
+    }
+    footer .cont-footer .contact-us {
+        display: flex;
+        width: 200%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       
+    }
+    
+    footer .cont-footer .contact-us .cont-contact {
+        margin-left: 45px;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        flex-direction: row;
+    }
+    /* hover */
+    header .img-header img:hover {
+        width: 35%;
+    }
+    main .card-project .card:hover {
+        width: 310px;
+        height: 360px;
+    }
+}
